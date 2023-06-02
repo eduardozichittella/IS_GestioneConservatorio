@@ -1,15 +1,15 @@
-package Entity;
+package entity;
 
 //import java.util.*;
 
-public class CorsodiStudio {
+public class EntityCorsodiStudio {
 
 	private String nomeCorsodiStudi;
 	private String descrizione;
 	//TODO : corsi_inclusi[]
 	//private Map<String, ArrayList<String>> multiValueMap = new HashMap<String,ArrayList<String>>();
 	
-	public CorsodiStudio(String nomeCorsodiStudi, String descrizione/*,
+	public EntityCorsodiStudio(String nomeCorsodiStudi, String descrizione/*,
 			Map<String, ArrayList<String>> multiValueMap*/) {
 		this.nomeCorsodiStudi = nomeCorsodiStudi;
 		this.descrizione = descrizione;

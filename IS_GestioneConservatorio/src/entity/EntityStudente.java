@@ -1,6 +1,6 @@
-package Entity;
+package entity;
 
-public class Studente {
+public class EntityStudente {
 
 	private String matricolaStud;
 	private String nomeStud;
@@ -9,7 +9,7 @@ public class Studente {
 	private String password;
 	private long pin;
 	
-	public Studente (String matricolaStud, String nomeStud, String cognomeStud, 
+	public EntityStudente (String matricolaStud, String nomeStud, String cognomeStud, 
 			String username, String password, long pin) {
 		this.matricolaStud = matricolaStud;
 		this.nomeStud = nomeStud;

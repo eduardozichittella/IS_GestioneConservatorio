@@ -1,12 +1,12 @@
-package Entity;
+package entity;
 
-public class Docente {
+public class EntityDocente {
 
 	private String matricolaProf;
 	private String nomeProf;
 	private String cognomeProf;
 	
-	public Docente (String matricolaProf, String nomeProf, String cognomeProf) {
+	public EntityDocente (String matricolaProf, String nomeProf, String cognomeProf) {
 		this.matricolaProf = matricolaProf;
 		this.nomeProf = nomeProf;
 		this.cognomeProf = cognomeProf;

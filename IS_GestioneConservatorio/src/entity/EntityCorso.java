@@ -1,12 +1,12 @@
-package Entity;
+package entity;
 
-public class Corso {
+public class EntityCorso {
 
 	private String codice;
 	private String denominazione;
 	private int crediti;
 	
-	public Corso (String codice, String denominazione, int crediti) {
+	public EntityCorso (String codice, String denominazione, int crediti) {
 		this.codice = codice;
 		this.denominazione = denominazione;
 		this.crediti = crediti;

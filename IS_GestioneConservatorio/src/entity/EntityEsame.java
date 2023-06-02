@@ -1,15 +1,15 @@
-package Entity;
+package entity;
 
 import java.util.Date;
 
-public class Esame {
+public class EntityEsame {
 
 	private int voto;
 	private boolean lode;
 	private String noteProf;
 	private Date data;
 	
-	public Esame (int voto, boolean lode, String noteProf, Date data) {
+	public EntityEsame (int voto, boolean lode, String noteProf, Date data) {
 		this.voto = voto;
 		this.lode = lode;
 		this.noteProf = noteProf;
