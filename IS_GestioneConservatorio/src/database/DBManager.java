@@ -14,7 +14,7 @@ public class DBManager {
 	public static Connection openConnection(){
 		if (conn == null){
 			try {
-				conn  = DriverManager.getConnection( URL , "admin", "");
+				conn  = DriverManager.getConnection( URL , "sa", "");
 			} catch (SQLException e) {
 				System.out.printf("Connessione al database non riuscita!");
 				e.printStackTrace();

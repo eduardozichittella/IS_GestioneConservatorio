@@ -1,0 +1,87 @@
+2023-06-05 14:09:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS CORSO (\000a         Codice INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \000a         Denominazione VARCHAR(255),\000a         CFU VARCHAR(255),\000a[*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS CORSO (
+         Codice INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+         Denominazione VARCHAR(255),
+         CFU VARCHAR(255),
+ [42001-214]
+2023-06-05 14:09:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS DOCENTE (\000a         Matricola INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \000a         Nome VARCHAR(255),\000a         Cognome VARCHAR(255),\000a[*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS DOCENTE (
+         Matricola INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+         Nome VARCHAR(255),
+         Cognome VARCHAR(255),
+ [42001-214]
+2023-06-05 14:10:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CORSO" not found; SQL statement:
+INSERT INTO Corso (Codice, Denominazione, CFU) VALUES (?,?,?) [42102-214]
+2023-06-05 14:11:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS CORSO (\000a         Codice INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \000a         Denominazione VARCHAR(255),\000a         CFU VARCHAR(255),\000a[*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS CORSO (
+         Codice INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+         Denominazione VARCHAR(255),
+         CFU VARCHAR(255),
+ [42001-214]
+2023-06-05 14:11:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS DOCENTE (\000a         Matricola INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \000a         Nome VARCHAR(255),\000a         Cognome VARCHAR(255),\000a[*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS DOCENTE (
+         Matricola INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+         Nome VARCHAR(255),
+         Cognome VARCHAR(255),
+ [42001-214]
+2023-06-05 14:11:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CORSO" not found; SQL statement:
+INSERT INTO Corso (Codice, Denominazione, CFU) VALUES (?,?,?) [42102-214]
+2023-06-05 14:17:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS CORSO (\000a         Codice INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \000a         Denominazione VARCHAR(255),\000a         CFU VARCHAR(255),\000a[*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS CORSO (
+         Codice INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+         Denominazione VARCHAR(255),
+         CFU VARCHAR(255),
+ [42001-214]
+2023-06-05 14:17:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS DOCENTE (\000a         Matricola INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \000a         Nome VARCHAR(255),\000a         Cognome VARCHAR(255),\000a[*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS DOCENTE (
+         Matricola INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+         Nome VARCHAR(255),
+         Cognome VARCHAR(255),
+ [42001-214]
+2023-06-05 14:18:00 database: wrong user or password; user: "ADMIN"
+org.h2.message.DbException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:152)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 16 more
+2023-06-05 14:18:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS CORSO (\000a         Codice INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \000a         Denominazione VARCHAR(255),\000a         CFU VARCHAR(255),\000a[*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS CORSO (
+         Codice INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+         Denominazione VARCHAR(255),
+         CFU VARCHAR(255),
+ [42001-214]
+2023-06-05 14:18:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS DOCENTE (\000a         Matricola INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \000a         Nome VARCHAR(255),\000a         Cognome VARCHAR(255),\000a[*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS DOCENTE (
+         Matricola INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+         Nome VARCHAR(255),
+         Cognome VARCHAR(255),
+ [42001-214]
+2023-06-05 14:18:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCENTE" not found; SQL statement:
+INSERT INTO Docente (Matricola, Nome, Cognome) VALUES (?,?,?) [42102-214]
