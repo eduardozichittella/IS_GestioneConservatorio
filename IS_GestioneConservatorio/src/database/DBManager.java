@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DBManager {
 	
 	protected final static String dbPath = "./test";
-	protected final static String URL = "jdbc:h2:" + dbPath;
+	protected final static String URL = "jdbc:h2:tcp://localhost/" + dbPath;
 	
 	protected static Connection conn;
 	
