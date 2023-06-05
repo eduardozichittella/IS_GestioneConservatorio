@@ -23,7 +23,7 @@ public class StudenteDAO {
 		Connection connection = DBManager.openConnection();
 		try {
 			Statement stmt = connection.createStatement();
-			stmt.execute("CREATE TABLE IF NOT EXISTS STUDENTE (\n"
+			stmt.execute("CREATE TABLE STUDENTE IF NOT EXISTS STUDENTE (\n"
 					+ "         Matricola INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \n"
 					+ "         Nome VARCHAR(255),\n"
 					+ "         Cognome VARCHAR(255),\n"

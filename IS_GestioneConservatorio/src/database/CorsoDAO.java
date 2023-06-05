@@ -22,7 +22,7 @@ public class CorsoDAO {
 		
 		try {
 			Statement stmt = connection.createStatement();
-			stmt.execute("CREATE TABLE IF NOT EXISTS CORSO (\n"
+			stmt.execute("CREATE TABLE CORSO IF NOT EXISTS CORSO (\n"
 					+ "         Codice INT NOT NULL AUTO_INCREMENT PRIMARY KEY, \n"
 					+ "         Denominazione VARCHAR(255),\n"
 					+ "         CFU VARCHAR(255),\n");
